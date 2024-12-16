@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav {
+           background-color: #c9c9c98e;
+           color: rgb(0, 0, 0);
+           padding: 6px;
+           text-align: left;
+       }
+</style>
+<body>
+<h1>Etiquetas HTML</h1>
+<nav>
+<ul>
+   <h3>Lista de enlaces</h3>
+   <li><a href="index.html">Inicio</a></li>
+   <li><a href="formateotexto.html">Ejemplos de formato de texto</a></li>
+   <li><a href="listas.html">Listas organizadas y desorganizadas</a></li>
+   <li><strong>Tablas y multimedia</strong></li>
+   <li><a href="/PRIMERHTML/Forms/primerform.html">Formularios</a></li>
+</ul>
+</nav>
+    <h2>Tablas</h2>
+    <table border="1" cellpadding="5" style="margin-left:35%;">
+        <caption>Ejemplo de tabla 1</caption>
+        <thead>
+            <tr>
+                <th colspan="5" style="background-color:grey; color:white">Animales en peligro de extinción</th>
+            </tr>
+            <tr style="background-color:lightgrey">
+                <th>Nombre</th>
+                <th>Cabezas</th>
+                <th>Previsión 2028</th>
+                <th>Previsión 2035</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Ballena</th>
+                <td style="text-align:center;">6000</td>
+                <td style="text-align:center;">4000</td>
+                <td style="text-align:center;">1500</td>
+            </tr>
+            <tr>
+                <th>Oso pardo</th>
+                <td style="text-align:center;">50</td>
+                <td colspan="2" rowspan="2" style="background-color:red; text-align:center;" >0</td>
+            </tr>
+            <tr>
+                <th>Lince</th>
+                <td style="text-align:center;">10</td>
+            </tr>
+            <tr>
+                <th>Tigre</th>
+                <td style="text-align:center;">300</td>
+                <td colspan="2" style="text-align:center;">210</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+            <th>Total cbz</th>
+            <td colspan="3">6360 de cabezas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <br/>
+    <br/>
+    <br/>
+
+    <table border="1" cellpadding="8" style="margin-left:35%;" >
+        <caption>Ejemplo de tabla 2</caption>
+        <thead>
+            <tr>
+            <th>horas</th>
+                <th>Lunes</th>
+                <th>martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>9:00-14:00</th>
+                <td>clase</td>
+                <td rowspan="2">libre</td>
+                <td>Gimnasio</td>
+                <td>clase</td>
+                <td>libre</td>
+            </tr>
+            <tr>
+                <th>14:00-20:00</th>
+                <td>compras</td>
+                <td>Estudio</td>
+                <td>libre</td>
+                <td>gimnasio</td>
+            </tr>
+            <tr>
+                <td colspan="6" >Primera tabla de pruebas</td>
+            </tr>
+         </tbody>
+    </table>
+    <br/>
+    <hr/>
+    <br/>
+    <br/>
+
+    <table border="1" cellpadding="8">
+    <caption>Muestra las principales etiquetas multimedia </caption>
+    <thead>
+        <tr>
+            <td colspan="3"><a href="https://keepcoding.io/blog/etiquetas-insertar-elementos-multimedia-html/">Multimedia en html</a></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Imagenes</th>
+            <th>videos</th>
+            <th>sonido</th>
+        </tr>
+        <tr>
+            <td><img src="formatos.jpg" alt="formatos de texto" style="width:65%;height:65%;"></td>
+            <td rowspan="2">
+                <video width="360" height="360" controls muted>
+                    <source src="videomuestra.mp4" type="video/mp4">
+                    <source src="videomuestra.webm" type="video/webm">
+                </video>
+            </td>
+            <td rowspan="2">
+                <audio controls muted>
+                    <source src="audiomuestra.mp3" type="audio/mp3">
+                    <source src="audiomuestra.ogg" type="audio/ogg">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td style="display:flex">
+                <figure>
+                <img src="ejemplos.png" alt="ejemplos" style="width:100%;height:100%;">
+                <figcaption>Ejemplo de etiqueta FIGURE</figcaption>
+                </figure>
+                <picture>
+                    <source srcset="ejemplo2.jpg">
+                    <img src="ejemplo2.png" alt="ejemplos" style="width:100%;height:100%;">
+                </picture>
+            </td>
+        </tr>
+        <tfoot>
+        <tr>
+            <td><p>&lt;img&gt; &lt;figure&gt; &lt;picture&gt;</p></td>
+            <td><p>&lt;video width="360" height="360" controls muted&gt;<br/>
+                &lt;source src="videomuestra.mp4" type="video/mp4"&gt;<br/>
+                &lt;source src="videomuestra.webm" type="video/webm"video src="video.mp4"&gt; <br/>
+                &lt;/video&gt;
+            </p>
+            </td>
+            <td><p>&lt;audio controls muted&gt;<br/>
+                &lt;source src="audiomuestra.mp3" type="audio/mp3"&gt;<br/>
+                &lt;source src="audiomuestra.ogg" type="audio/ogg"&gt;<br/>
+                &lt;/audio&gt;
+            </p></td>
+        </tr>
+        </tfoot>
+    </tbody>
+    </table>
+    <br/>
+    <br/>
+    <hr/>
+</body>
+</html>
